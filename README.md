@@ -4,7 +4,7 @@ This repository is a collection of ETL (Extract, Transform, Load) projects built
 
 * Project Structure
 
-etl-project
+etl-project                           
 ├── extract.py            
 ├── transform.py               
 ├── load.py                              
