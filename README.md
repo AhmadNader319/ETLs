@@ -7,11 +7,11 @@ This repository is a collection of ETL (Extract, Transform, Load) projects built
 etl-project
 ├── extract.py            
 ├── transform.py               
-├── load.py            
-├── config.py
-├── main.py 
-├── README.md
-└── requirements.txt
+├── load.py                              
+├── config.py                                    
+├── main.py                                                 
+├── README.md                                                           
+└── requirements.txt                  
 
 How It Works
 
