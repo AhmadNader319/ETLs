@@ -5,12 +5,11 @@ This repository is a collection of ETL (Extract, Transform, Load) projects built
 * Project Structure
 
 etl-project
-│
-├── extract.py
-├── transform.py
-├── load.py
+├── extract.py            
+├── transform.py               
+├── load.py            
 ├── config.py
-├── main.py
+├── main.py 
 ├── README.md
 └── requirements.txt
 
