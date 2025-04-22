@@ -4,15 +4,14 @@ This repository is a collection of ETL (Extract, Transform, Load) projects built
 
 * Project Structure
 
-    etl-project/
-    │
-    ├── extract.py               # Loads raw data from the source specified 
-    ├── transform.py             # Cleans and transforms data
-    ├── load.py                  # Inserts data into PostgreSQL
-    ├── config.py                # Database connection setup (locally for now)
-    ├── main.py                  # ETL runner
-    ├── README.md                # Project documentation
-    └── requirements.txt         # Python dependencies
+etl-project                           
+├── extract.py            
+├── transform.py               
+├── load.py                              
+├── config.py                                    
+├── main.py                                                 
+├── README.md                                                           
+└── requirements.txt                  
 
 How It Works
 
