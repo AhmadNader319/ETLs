@@ -1,54 +1,60 @@
-ETL Projects Repository
+ETLs & ELTs Repository
+This repository contains data engineering projects focusing on ETL (Extract, Transform, Load) and ELT (Extract, Load, Transform) processes. These projects demonstrate data pipeline implementations for different data sources and destinations.
 
-This repository is a collection of ETL (Extract, Transform, Load) projects built during my data engineering journey. Each project is designed to extract data from various sources, transform it into meaningful formats, and load it into storage systems such as PostgreSQL.
+Projects
+CSV to PostgreSQL ETL: This project extracts data from local CSV files, transforms it, and loads it into a local PostgreSQL database.  It showcases a traditional ETL approach.
 
-* Project Structure
+S3 to S3 ELT: This project extracts multiple raw CSV files from an S3 bucket, loads them to another S3 location, and then transforms the data. This project demonstrates an ELT approach, leveraging S3 for the loading phase.
 
-etl-project                           
-├── extract.py            
-├── transform.py               
-├── load.py                              
-├── config.py                                    
-├── main.py                                                 
-├── README.md                                                           
-└── requirements.txt                  
+Repository Structure
+ETLs&ELTs/
+├── CSV_to_Postgresql_ETL/
+│   ├── config.py
+│   ├── extract.py
+│   ├── load.py
+│   ├── main.py
+│   ├── transform.py
+│   ├── utils.py
+├── S3_to_S3_P1/
+│   ├── config.py
+│   ├── extract.py
+│   ├── load.py
+│   ├── main.py
+│   ├── transform.py
+│   ├── utils.py
+├── README.md
+├── requirements.txt
+└── shared_utils/
 
-How It Works
+Technologies Used:
+Python
 
-1. Extract:
-    * Reads the source_file.csv/various sources from the filesystem/APIs.
+Pandas
 
-2. Transform:
-    * Handles missing values and invalid entries
-    * Unify datatypes and column renaming (including snake_case naming convention)
-    * Drops duplicate rows
-    * Renames columns to follow snake_case naming
+PostgreSQL
 
-3. Load:
-    * Inserts the transformed data into a PostgreSQL table using efficient bulk loading (execute_values)/ (StringIO to be tried) 
+Amazon S3
 
-* Requirements:
+Boto3
 
-    Python 3.2.2+
-    PostgreSQL
+Installation
+Clone the repository:
 
-* Required Python packages (install with pip):
+git clone <repository_url>
+cd ETLs&ELTs
 
-    pip install -r requirements.txt
+Install the required Python packages:
 
-* Contents of requirements.txt:
-    
-    pandas
-    numpy
-    psycopg2-binary
+pip install -r requirements.txt
 
--- How to Run
+Usage
+Each project has its own set of instructions. Please refer to the project-specific directories for details.
 
-    Update DB CredentialsEdit config.py with your PostgreSQL database name and user.
+CSV to PostgreSQL ETL: See the CSV_to_Postgresql_ETL directory.  You will need a running PostgreSQL instance and to configure the database connection in config.py.
 
-    Run the ETL Pipeline
-        python main.py
+S3 to S3 ELT: See the S3_to_S3_P1 directory.  You will need an AWS account with S3 access and to configure your S3 buckets and credentials in config.py.
 
 Author
 
-Ahmed NaderAspiring Data Engineer | Python & SQL EnthusiastFeel free to connect or contribute to the repository!
+Ahmed Nader
+Aspiring Data Engineer | Python & SQL & AWS EnthusiastFeel free to connect or contribute to the repository!

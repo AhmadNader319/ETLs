@@ -1,10 +1,11 @@
+# extract.py
 import pandas as pd
 
 def load_csv(path: str) -> pd.DataFrame:
-    """Reads CSV from the provided path."""
+    """Reads CSV file."""
     try:
         df = pd.read_csv(path)
-        print(f"Successfully loaded CSV from: {path}")
+        print(f"Loaded: {path}")
         return df
     except FileNotFoundError:
         print(f"File not found: {path}")
