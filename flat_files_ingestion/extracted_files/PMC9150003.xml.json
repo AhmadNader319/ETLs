@@ -1,0 +1,40 @@
+{
+"paper_id": "PMC9150003",
+"metadata": {
+    "title": "A New Framework for Predicting Viral Infections in Large Populations",
+    "authors": [
+    {
+        "first": "John",
+        "middle": ["A."],
+        "last": "Doe",
+        "suffix": "",
+        "email": "john.doe@example.com",
+        "affiliation": {}
+    },
+    {
+        "first": "Jane",
+        "middle": [],
+        "last": "Smith",
+        "suffix": "",
+        "email": null,
+        "affiliation": {}
+    }
+    ]
+},
+"body_text": [
+    {
+    "text": "In this study, we propose a novel predictive model that combines demographic and epidemiological factors...",
+    "cite_spans": [],
+    "section": "1. Introduction",
+    "ref_spans": []
+    }
+],
+"ref_entries": {
+    "TABREF0": {
+    "text": "Table 1: Population by age group.",
+    "type": "table"
+    }
+},
+"back_matter": [],
+"bib_entries": {}
+}

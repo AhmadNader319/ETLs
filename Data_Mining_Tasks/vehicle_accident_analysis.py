@@ -54,7 +54,7 @@ features = np.array(ct.fit_transform(features))
 
 print(features[0:10])
 
-X_train, X_test, y_train, y_test = train_test_split(features, label, test_size=0.3, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(features, label, test_size=0.2, random_state=42)
 
 print(X_train)
 print(X_test)
@@ -67,6 +67,9 @@ X_test[:, -1:] = scaler.transform(X_test[:, -1:])
 
 print(X_train)
 print(X_test)
+
+
+
 
 # --- Naive Bayes Classifier Training ---
 nb_classifier = GaussianNB()
@@ -94,28 +97,32 @@ ax.yaxis.set_ticklabels(['No Accident', 'Accident'])
 
 plt.show()
 
-# --- KNN Classifier Training ---
-knn_classifier = KNeighborsClassifier(n_neighbors=5, metric='minkowski', p=2)
-knn_classifier.fit(X_train, y_train)
 
-# --- Prediction ---
-knn_y_pred = knn_classifier.predict(X_test)
-result_df = pd.DataFrame({'Predicted': knn_y_pred, 'Test': y_test})
-print(result_df)
 
-# --- Confusion Matrix & Accuracy ---
-knn_cm = confusion_matrix(y_test, knn_y_pred)
-print(knn_cm)
-knn_accuracy = accuracy_score(y_test, knn_y_pred)
-print(f'Accuracy: {knn_accuracy * 100:.2f}%')
 
-# --- Plot Confusion Matrix ---
-ax = sns.heatmap(knn_cm, annot=True, fmt='d', cmap='viridis')
-ax.set_title('KNN Confusion Matrix')
-ax.set_xlabel('Predicted')
-ax.set_ylabel('Actual')
-
-ax.xaxis.set_ticklabels(['No Accident', 'Accident'])
-ax.yaxis.set_ticklabels(['No Accident', 'Accident'])
-
-plt.show()
+#
+## --- KNN Classifier Training ---
+#knn_classifier = KNeighborsClassifier(n_neighbors=5, metric='minkowski', p=2)
+#knn_classifier.fit(X_train, y_train)
+#
+## --- Prediction ---
+#knn_y_pred = knn_classifier.predict(X_test)
+#result_df = pd.DataFrame({'Predicted': knn_y_pred, 'Test': y_test})
+#print(result_df)
+#
+## --- Confusion Matrix & Accuracy ---
+#knn_cm = confusion_matrix(y_test, knn_y_pred)
+#print(knn_cm)
+#knn_accuracy = accuracy_score(y_test, knn_y_pred)
+#print(f'Accuracy: {knn_accuracy * 100:.2f}%')
+#
+## --- Plot Confusion Matrix ---
+#ax = sns.heatmap(knn_cm, annot=True, fmt='d', cmap='viridis')
+#ax.set_title('KNN Confusion Matrix')
+#ax.set_xlabel('Predicted')
+#ax.set_ylabel('Actual')
+#
+#ax.xaxis.set_ticklabels(['No Accident', 'Accident'])
+#ax.yaxis.set_ticklabels(['No Accident', 'Accident'])
+#
+#plt.show()

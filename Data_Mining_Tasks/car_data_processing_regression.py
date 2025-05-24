@@ -78,14 +78,33 @@ print(X_train[0:4])
 print("\nX_test after scaling:")
 print(X_test[0:4])
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+# linear regression
 regressor = LinearRegression()
 regressor.fit(X_train, y_train)
+# predict the new prices (y_pred) based on the dependent values (X__test
+
+
 
 y_pred = regressor.predict(X_test)
+# compare the original prices/ independent/ features (y_test) and the new set of prices (y_pred)
 result_df = pd.DataFrame({'Before_prediction': y_test, 'After_prediction': y_pred})
 print("\nPrediction result:")
 print(result_df.head())
 
+# coefficient of determination -> how well the model fits
 r2 = r2_score(y_test, y_pred)
 print(f'\nR-squared score: {r2:.4f}')
 
@@ -94,6 +113,13 @@ print(f'Mean Absolute Error: {mae:.4f}')
 
 rmse = np.sqrt(mean_squared_error(y_test, y_pred))
 print(f'Root Mean Squared Error: {rmse:.4f}')
+
+
+
+
+
+
+
 # --- Visualization with Metrics ---
 plt.figure(figsize=(8, 6))
 plt.scatter(y_test, y_pred, alpha=0.7)

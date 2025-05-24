@@ -19,6 +19,7 @@ api_endpoints = config.get_api_endpoints()
 
 def get_forecast_weather_data(query):
     url = f"{base_url}/forecast.json?key={api_key}&q={query}&days=4"
+    print(url)
     try:
         response = requests.get(url)
         response.raise_for_status()
@@ -50,6 +51,7 @@ if __name__ == "__main__":
         logging.info("Starting weather data fetch and save sequence...")
 
         current_weather_data = get_current_weather_data('Egypt')
+        print(current_weather_data)
         weather_snapshot_hour = 13
         if current_weather_data:
             logging.info("Saving current weather data to the database...")
@@ -58,6 +60,7 @@ if __name__ == "__main__":
             logging.warning("No current weather data to save.")
 
         forecast_weather_data = get_forecast_weather_data('Egypt')
+        print(forecast_weather_data)
         if forecast_weather_data:
             logging.info("Saving forecast weather data to the database...")
             for day in range(1, 4):

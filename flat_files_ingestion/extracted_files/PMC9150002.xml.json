@@ -1,0 +1,68 @@
+{
+    "paper_id": "PMC9150002",
+    "metadata": {
+        "title": "A Model for the Lifespan Loss Due to a Viral Disease: Example of the COVID-19 Outbreak",
+        "authors": [
+            {
+                "first": "Kayode",
+                "middle": [],
+                "last": "Oshinubi",
+                "suffix": "",
+                "email": null,
+                "affiliation": {}
+            }
+        ]
+    },
+    "body_text": [
+        {
+            "text": "The chronologic age classically used in demography is often unable to give useful information about which exact stage in ageing process a population has reached. We propose here to use a new notion, the biological age [1] in the subpopulations corresponding to age classes in populations of some countries. Apart from demography factors influencing the spread of the pandemic, some other factors like the socio-economic and epidemiology are important in the modelling of COVID-19. The human or cell population matrix model is an important tool for investigating the interactions between life span, socioeconomic, epidemiology, and demography (geographical, age, and temperature) determinants of viral infections. This model can be tweaked to include life span variation, stochasticity, environmental dependencies such as temperature, and population feedbacks such as ageing. Lifespan varies across developed and developing countries, and while developed countries have high life expectancy rate and low mortality rate, it is not the case for developing countries, where larger percentage of their population are young people which have a smaller number of COVID-19 cases. This smaller number may also be explained by the fact that these countries only test symptomatic cases. Developed countries have more aged population, and the severity and mortality of the diseases are higher in older people even though recently, we have noticed an increase in the number of infected young population due to the Omicron variant, known for its high contagiousness. The severity and impact of the disease varies depending on the underlying ailments of the host, reason for which it is important to study the role of comorbidities when formulating a model to study a viral infection like COVID-19. Once there is a dysfunction in the immune system which plays a vital role in infectious disease severity of an infected individual, then duration spent in ICU, hospitalization and the number of deaths recorded will increase if there are numerous diabetics, asthmatic, cardiovascular and obese patients in the populations considered. ",
+            "cite_spans": [
+                {
+                    "start": 219,
+                    "end": 220,
+                    "mention": "1",
+                    "ref_id": "BIBREF0"
+                }
+            ],
+            "section": "1. Introduction",
+            "ref_spans": [
+                {
+                    "start": 437,
+                    "end": 445,
+                    "mention": "Figure 1",
+                    "ref_id": "FIGREF0"
+                }
+            ]
+        }
+    ],
+    "ref_entries": {
+        "TABREF0": {
+            "text": "Table 1: Distribution of Irish population into 5 age classes in 2020.\n",
+            "type": "table"
+        }
+    },
+    "back_matter": [],
+    "bib_entries": {
+        "BIBREF0": {
+            "title": "Biological boundaries and biological age",
+            "authors": [
+                {
+                    "first": "J.",
+                    "middle": [],
+                    "last": "Demongeot",
+                    "suffix": ""
+                }
+            ],
+            "year": 2009,
+            "venue": "Acta Biotheor.",
+            "volume": "57",
+            "issn": "",
+            "pages": "397-419",
+            "other_ids": {
+                "DOI": [
+                    "10.1007/s10441-009-9087-8"
+                ]
+            }
+        }
+    }
+}

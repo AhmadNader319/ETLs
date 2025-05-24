@@ -1,0 +1,32 @@
+{
+    "paper_id": "PMC9150006",
+    "metadata": {
+      "title": "Predicting Disease Outcomes Based on Socio-Economic Factors",
+      "authors": [
+        {
+          "first": "Laura",
+          "middle": [],
+          "last": "Carter",
+          "suffix": "",
+          "email": null,
+          "affiliation": {}
+        }
+      ]
+    },
+    "body_text": [
+      {
+        "text": "We explore how socio-economic factors, including income and education levels, impact disease outcomes...",
+        "cite_spans": [],
+        "section": "1. Introduction",
+        "ref_spans": []
+      }
+    ],
+    "ref_entries": {
+      "TABREF0": {
+        "text": "Table 1: Correlation between income and disease incidence.",
+        "type": "table"
+      }
+    },
+    "back_matter": [],
+    "bib_entries": {}
+  }
