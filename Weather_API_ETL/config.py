@@ -17,5 +17,5 @@ def get_current_day():
         "day3": 7
     }
 def get_connection():
-    connection_string = "mongodb+srv://ahmadnader2:4kpOAgC8yqXJU6Hq@form-cluster.a4uuarh.mongodb.net/?retryWrites=true&w=majority&appName=Form-Cluster"
+    connection_string = "add_your_connection_srting"
     return connection_string
