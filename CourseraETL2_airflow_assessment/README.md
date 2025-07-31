@@ -17,32 +17,32 @@ Here are some key screenshots from the project, demonstrating the DAG's structur
 ### DAG Arguments and Definitions
 A visualization of the DAG arguments and its definition.
 
-![DAG Arguments](images_steps/dag_args.png)
-![DAG Definition](images_steps/dag_definition.png)
+![DAG Arguments](bashOperator_airflow_pipeline/images_steps/dag_args.png)
+![DAG Definition](bashOperator_airflow_pipeline/images_steps/dag_definition.png)
 
 ### Task Definitions
 Screenshots of the individual task configurations.
 
-![Unzip Data Task](images_steps/unzip_data.png)
-![Extract Data from CSV](images_steps/extract_data_from_csv.png)
-![Extract Data from TSV](images_steps/extract_data_from_tsv.png)
-![Transform Task](images_steps/transform.png)
-![Consolidate Data Task](images_steps/consolidate_data.png)
+![Unzip Data Task](bashOperator_airflow_pipeline/images_steps/unzip_data.png)
+![Extract Data from CSV](bashOperator_airflow_pipeline/images_steps/extract_data_from_csv.png)
+![Extract Data from TSV](bashOperator_airflow_pipeline/images_steps/extract_data_from_tsv.png)
+![Transform Task](bashOperator_airflow_pipeline/images_steps/transform.png)
+![Consolidate Data Task](bashOperator_airflow_pipeline/images_steps/consolidate_data.png)
 
 ### The Task Pipeline
 The full pipeline, showing the dependencies between tasks.
 
-![Task Pipeline](images_steps/task_pipeline.png)
+![Task Pipeline](bashOperator_airflow_pipeline/images_steps/task_pipeline.png)
 
 ### DAG in the Airflow UI
 Proof of the DAG being submitted and successfully run in the Airflow UI.
 
-![Submitted DAG](images_steps/submit_dag.png)
-![Unpaused and Triggered DAG](images_steps/unpause_trigger_dag.png)
-![DAG Task States](images_steps/dag_tasks.png)
-![DAG Runs History](images_steps/dag_runs.png)
+![Submitted DAG](bashOperator_airflow_pipeline/images_steps/submit_dag.png)
+![Unpaused and Triggered DAG](bashOperator_airflow_pipeline/images_steps/unpause_trigger_dag.png)
+![DAG Task States](bashOperator_airflow_pipeline/images_steps/dag_tasks.png)
+![DAG Runs History](bashOperator_airflow_pipeline/images_steps/dag_runs.png)
 
 ## Course Completion Certificate
 
-[View Certificate](Certificate/ETL%20and%20Data%20Pipelines%20with%20Airflow.pdf)
+[View Certificate](bashOperator_airflow_pipeline/Certificate/ETL%20and%20Data%20Pipelines%20with%20Airflow.pdf)
 
