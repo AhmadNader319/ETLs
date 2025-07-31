@@ -17,5 +17,5 @@ def get_current_day():
         "day3": 7
     }
 def get_connection():
-    connection_string = "add_your_connection_srting"
+    connection_string = ""
     return connection_string

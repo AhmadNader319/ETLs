@@ -58,3 +58,26 @@
 2025-05-13 18:28:47,229 - INFO - Saving current weather data to the database...
 2025-05-13 18:28:49,643 - INFO - Forecast weather data fetched successfully.
 2025-05-13 18:28:49,653 - INFO - Saving forecast weather data to the database...
+2025-05-29 22:44:12,835 - INFO - Starting weather data fetch and save sequence...
+2025-05-29 22:44:13,049 - INFO - Current weather data fetched successfully.
+2025-05-29 22:44:13,050 - INFO - Saving current weather data to the database...
+2025-05-29 22:44:15,300 - INFO - Forecast weather data fetched successfully.
+2025-05-29 22:44:15,307 - INFO - Saving forecast weather data to the database...
+2025-05-29 23:00:01,938 - INFO - Starting weather data fetch and save sequence...
+2025-05-29 23:00:02,158 - INFO - Current weather data fetched successfully.
+2025-05-29 23:00:02,159 - INFO - Saving current weather data to the database...
+2025-05-29 23:00:02,159 - ERROR - Unexpected error occurred in the main section.
+Traceback (most recent call last):
+  File "/Users/ahmednader/Desktop/Code Repository/ETLs/Weather_API_ETL/main.py", line 58, in <module>
+    db_utils.save_current_weather(current_weather_data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahmednader/Desktop/Code Repository/ETLs/Weather_API_ETL/db_utils.py", line 11, in save_current_weather
+    db = get_database()
+  File "/Users/ahmednader/Desktop/Code Repository/ETLs/Weather_API_ETL/db_utils.py", line 7, in get_database
+    client = MongoClient(connection_string)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pymongo/synchronous/mongo_client.py", line 813, in __init__
+    self._seeds.update(split_hosts(entity, self._port))
+                       ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pymongo/uri_parser_shared.py", line 391, in split_hosts
+    raise ConfigurationError("Empty host (or extra comma in host list)")
+pymongo.errors.ConfigurationError: Empty host (or extra comma in host list)
